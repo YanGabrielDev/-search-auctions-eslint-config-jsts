@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import globals from 'globals';
 import importPlugin from 'eslint-plugin-simple-import-sort';
-import preferArrow from 'eslint-plugin-prefer-arrow';
+// import preferArrow from 'eslint-plugin-prefer-arrow';
 
 export default [
   {
@@ -20,7 +20,7 @@ export default [
     plugins: {
       '@typescript-eslint': ts,
       'simple-import-sort': importPlugin,
-      'prefer-arrow': preferArrow,
+      // 'prefer-arrow': preferArrow,
     },
   },
   js.configs.recommended,
