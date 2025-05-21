@@ -1,5 +1,5 @@
 import js from '@eslint/js';
-import ts from 'typescript-eslint';
+// import ts from 'typescript-eslint';
 import globals from 'globals';
 import importPlugin from 'eslint-plugin-simple-import-sort';
 // import preferArrow from 'eslint-plugin-prefer-arrow';
@@ -17,14 +17,14 @@ export default [
             },
         },
         plugins: {
-            '@typescript-eslint': ts,
+            // '@typescript-eslint': ts,
             'simple-import-sort': importPlugin,
             // 'prefer-arrow': preferArrow,
         },
     },
     js.configs.recommended,
-    ...ts.configs.strictTypeChecked,
-    ...ts.configs.stylisticTypeChecked,
+    // ...ts.configs.strictTypeChecked,
+    // ...ts.configs.stylisticTypeChecked,
     {
         rules: {
             // Gerais

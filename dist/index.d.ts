@@ -1,6 +1,6 @@
 declare const _default: ({
     readonly rules: Readonly<import("eslint").Linter.RulesRecord>;
-} | import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.Config | {
+} | {
     files: string[];
     ignores: string[];
     languageOptions: {
@@ -849,29 +849,6 @@ declare const _default: ({
         };
     };
     plugins: {
-        '@typescript-eslint': {
-            config: typeof import("typescript-eslint").config;
-            configs: {
-                all: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                base: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.Config;
-                disableTypeChecked: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.Config;
-                eslintRecommended: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.Config;
-                recommended: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                recommendedTypeChecked: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                recommendedTypeCheckedOnly: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                strict: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                strictTypeChecked: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                strictTypeCheckedOnly: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                stylistic: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                stylisticTypeChecked: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-                stylisticTypeCheckedOnly: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.ConfigArray;
-            };
-            parser: {
-                meta?: { [K in keyof import("@typescript-eslint/utils/dist/ts-eslint").Parser.ParserMeta]?: import("@typescript-eslint/utils/dist/ts-eslint").Parser.ParserMeta[K] | undefined; };
-                parseForESLint(text: string, options?: unknown): { [k in keyof import("@typescript-eslint/utils/dist/ts-eslint").Parser.ParseResult]: unknown; };
-            };
-            plugin: import("@typescript-eslint/utils/dist/ts-eslint").FlatConfig.Plugin;
-        };
         'simple-import-sort': import("eslint").ESLint.Plugin;
     };
     rules?: undefined;

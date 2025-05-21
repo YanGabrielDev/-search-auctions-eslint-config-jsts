@@ -18,9 +18,10 @@ export default [
       },
     },
     plugins: {
-      // '@typescript-eslint': ts,
       'simple-import-sort': importPlugin,
-      // 'prefer-arrow': preferArrow,
+      import: { 
+
+      },
     },
   },
   js.configs.recommended,
